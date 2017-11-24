@@ -26,12 +26,12 @@ def maybe_process_ibovespa(file, output_file):
 
 				date = line[2:10]
 				cod_bdi = line[10:12]
-				cod_neg = line[12:24]
+				cod_neg = line[12:24].replace(" ", "")
 				tp_merc = line[24:27]
 				nome_res = line[27:39]
 				especi = line[39:49]
 				prazo_t = line[49:52]
-				mod_ref = line[52:56]
+				mod_ref = line[52:56].replace(" ", "")
 				pre_abe = line[56:69]
 				pre_max = line[69:82]
 				pre_min = line[82:95]
